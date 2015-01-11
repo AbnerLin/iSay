@@ -1,0 +1,134 @@
+body, p, span {
+	margin: 0px;
+	padding: 0px;
+	font-family: '微軟正黑體';
+	font-weight: bold;
+	text-align: center;
+}
+a {
+	/*text-decoration: none;*/
+}
+input {
+	border: solid 2px;
+	border-color: #CCC #EEE #EEE #CCC;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 5px 5px 5px 5px;
+	width: 150px;
+	height: 20px;
+}
+input:hover, input:focus {
+	border-color: #09C;
+}
+img {
+	width: 100%;
+}
+/* index */
+#main {
+	width: 1000px;
+	margin: 120px auto 90px auto;
+	text-align: center;
+	overflow: hidden;
+	padding: 10px;
+}
+/* login page's left */
+#left {
+	float: left;
+	border: #999 1px solid;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	
+	-moz-box-shadow: 0px 0px 15px gray;
+	-webkit-box-shadow: 0px 0px 15px gray;
+	box-shadow: 0px 0px 15px gray;
+	
+	width: 69%;
+	min-height: 544px;
+	overflow: hidden;
+}
+/* for AD */
+#left > #left_down {
+	/*	border: #000 1px solid;*/
+}
+#left > #left_down > .show_ad {
+	height: 385px;
+	width: 100%;
+	border: 0px;
+}
+#right {
+	/*	overflow: hidden;*/
+	width: 30%;
+	min-height: 500px;
+	float: right;
+	padding: 20px 0 20px 0;
+	border: #CCC 2px solid;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#status {
+	color: #ff0000;
+}
+.loader {
+	width: 15px;
+	margin-bottom: -2px;
+}
+footer {
+	font-family: Lucida Grande, Verdana, Lucida, Helvetica, Arial, Simsun, sans-serif;
+	font-size: 13px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	margin-top: 10px;
+	margin-bottom: 20px;
+/*	float: left;*/
+}
+#login_logo {
+	margin: 20px 5px 10px 5px;
+	background: url("images/Separator_land.gif") no-repeat bottom;
+	padding-bottom: 50px;
+}
+#login_dialog, #regist_dialog, #forget_dialog {
+	text-align: right;
+	padding-right: 40px;
+}
+#login_dialog input, #regist_dialog input, #forget_dialog input {
+	margin-top: 10px;
+}
+.verify_dialog {
+	font-size: 14px;
+	text-align: center;
+	border: 1px #AAA solid;
+	overflow: hidden;
+	margin: 20px 0 0 40px;
+}
+.btn {
+	display: inline-block;
+	margin: 5px;
+	height: 22px;
+	width: 70px;
+	border: 1px #AAA solid;
+	background-color: #CCC;
+	font-size: 16px;
+	color: white;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+}
+.btn:hover {
+	color: black;
+	background-color: #fff;
+}
+.button {
+	width: 100%;
+	margin: 20px 30px 20px 20px;
+	text-align: center;
+}
+#forget_passwd {
+	font-size: 14px;
+}

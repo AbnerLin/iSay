@@ -1,0 +1,23 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(login.html|regist.html|forget_passwd.html)\/?$ login.php [L,QSA]
+
+RewriteRule ^(inner|ad|css|js|lib)\/?$ http://%{HTTP_HOST}/index.php?account=$1 [L]
+
+
+RewriteRule ^(\w+)\/?$ /index.php?account=$1 [L,QSA]
+RewriteRule ^index\/(\w+)\/?$ /index.php?account=$1 [L,QSA]
+RewriteRule ^index.html\/?$ /index.php [L,QSA]
+
+RewriteRule ^index/(\w+)\/(\w+)\/?$ /index.php?account=$1i&curpage=$2 [L,QSA]
+RewriteRule ^index.php/(\w+)\/(\w+)\/?$ /index.php?account=$1&curpage=$2 [L,QSA]
+RewriteRule ^index.html/(\w+)\/(\w+)\/?$ /index.php?account=$1&curpage=$2 [L,QSA]
+RewriteRule ^(\w+)\/(\w+)\/?$ /index.php?account=$1&curpage=$2 [L,QSA]
+
+RewriteRule ^index/(\w+)\/(\w+)\/(\d+)\/?$ /index.php?account=$1&curpage=$2&page=$3 [L,QSA]
+RewriteRule ^index.php/(\w+)\/(\w+)\/(\d+)\/?$ /index.php?account=$1&curpage=$2&page=$3 [L,QSA]
+RewriteRule ^index.html/(\w+)\/(\w+)\/(\d+)\/?$ /index.php?account=$1&curpage=$2&page=$3 [L,QSA]
+RewriteRule ^(\w+)\/(\w+)\/(\d+)\/?$ /index.php?account=$1&curpage=$2&page=$3 [L,QSA]
